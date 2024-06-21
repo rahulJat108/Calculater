@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title> Calculator app</title>
+</head>
+
+<body>
+
+  <main id="main">
+    <section class="main_heading" id="main_heading">
+      <div class="title textTheme">calc</div>
+      <div class="themes">
+        <div class="themes-title textTheme">THEME</div>
+        <div class="toggle-theme-contain">
+          <div class="number-toogle">
+            <span class="textTheme">1</span>
+            <span class="textTheme">2</span>
+            <span class="textTheme">3</span>
+          </div>
+          <div class="toogle" id="toogle">
+            <!-- change theme click -->
+            <button class="buttonTheme toogle-bg tg-one" id="one"></button>
+            <button class="buttonTheme toogle-bg tg-two" id="two"></button>
+            <button class="buttonTheme toogle-bg tg-three" id="three"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_body">
+      <div class="output textTheme" id="output ">
+        <div class="previos" id="previos"></div>
+        <!-- <div class="current">399,981</div> -->
+        <div class="current" id="current"></div>
+      </div>
+      <div class="items" id="items">
+        <button number value="7" class="item key-light key-bg-first">7</button>
+        <button number value="8" class="item key-light key-bg-first">8</button>
+        <button number value="9" class="item key-light key-bg-first">9</button>
+        <button deleted class="item color-white key-blue key-bg-last">DEL</button>
+        <button number value="4" class="item key-light key-bg-first">4</button>
+        <button number value="5" class="item key-light key-bg-first">5</button>
+        <button number value="6" class="item key-light key-bg-first">6</button>
+        <button operand value="+" class="item key-light key-bg-first">+</button>
+        <button number value="1" class="item key-light key-bg-first">1</button>
+        <button number value="2" class="item key-light key-bg-first">2</button>
+        <button number value="3" class="item key-light key-bg-first">3</button>
+        <button operand value="-" class="item key-light key-bg-first">-</button>
+        <button number value="," class="item key-light key-bg-first">,</button>
+        <button number value="0" class="item key-light key-bg-first">0</button>
+        <button operand value="/" class="item key-light key-bg-first">/</button>
+        <button operand value="*" class="item key-light key-bg-first">*</button>
+        <button reset class="item color-white span-reset key-blue key-bg-last">RESET</button>
+        <!-- <button class="item bg-light">span-two</button> -->
+        <button samaDengan class="item span-dengan key-orange key-bg-middle samaDengan-bg color-white"
+          id="cape">=</button>
+        <!-- <button class="item">span-two</button> -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- udah selesai -->
+  <script src="script.js"></script>
+  <script src="calculator-script.js"></script>
+
+</body>
+
+</html>
